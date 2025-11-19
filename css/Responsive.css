@@ -1,0 +1,149 @@
+/* ============================================================
+   RESPONSIVE PARA CELULARES Y TABLETS
+   ============================================================ */
+
+@media (max-width: 991px) {
+
+    /* Ajuste general */
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    /* =======================
+       NAVBAR
+       ======================= */
+
+    #navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        display: none;  /* oculto en móvil */
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    #navbar ul.show {
+        display: block;  /* aparece con JS */
+    }
+
+    #navbar ul li {
+        margin: 15px 0;
+    }
+
+    /* =======================
+       SHOWCASE
+       ======================= */
+
+    #showcase {
+        height: 50vh;
+        padding: 20px;
+    }
+
+    #showcase .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* =======================
+       PROYECTOS
+       ======================= */
+
+    #proyecto h2 {
+        font-size: 28px;
+    }
+
+    .proyecto-detalle img {
+        width: 90%;
+    }
+
+    /* =======================
+       ACERCA DE
+       ======================= */
+
+    .Acerca_de-detalles {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .Acerca_de-experiencias,
+    .Acerca_de-mi {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* =======================
+       CONTACTOS
+       ======================= */
+
+    .Contactos-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .Contactos-row-icono {
+        width: 80%;
+        margin: auto;
+    }
+
+    .Contactos-row-icono img {
+        width: 50px;
+    }
+
+    /* =======================
+       FOOTER
+       ======================= */
+
+    #mainfooter {
+        padding: 20px;
+    }
+
+    .instagram-Boton-Seguir {
+        font-size: 16px;
+    }
+
+    .instagram-Boton-Seguir img {
+        width: 35px;
+    }
+}
+
+/* ============================================================
+   EXTRAS PARA PANTALLAS MUY PEQUEÑAS (menor a 450px)
+   ============================================================ */
+
+@media (max-width: 450px) {
+
+    #showcase {
+        height: 40vh;
+    }
+
+    #navbar .logo img {
+        width: 45px;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    .proyecto-detalle img {
+        width: 100%;
+    }
+
+    .Contactos-row-icono {
+        width: 100%;
+    }
+}

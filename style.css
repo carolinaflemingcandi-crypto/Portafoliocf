@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Contenedores */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================================================
+   NAVBAR
+   ================================================ */
+
+#navbar {
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #ff3ea5;
+}
+
+/* ================================================
+   SHOWCASE / PORTADA
+   ================================================ */
+
+#showcase {
+    height: 70vh;
+    background: linear-gradient(to bottom right, #ff3ea5, #ff9acb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn.btn-outline {
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn.btn-outline:hover {
+    background: white;
+    color: #ff3ea5;
+}
+
+/* ================================================
+   SECCIÓN PROYECTOS
+   ================================================ */
+
+#proyecto h2 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #ff3ea5;
+}
+
+.proyecto {
+    display: flex;
+    justify-content: center;
+}
+
+.proyecto-detalle img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ================================================
+   ACERCA DE
+   ================================================ */
+
+#Acerca_de h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #ff3ea5;
+}
+
+.Acerca_de-detalles {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Acerca_de-experiencias,
+.Acerca_de-mi {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.Acerca_de-experiencias h4,
+.Acerca_de-mi h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ff3ea5;
+}
+
+.large {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* ================================================
+   CONTACTOS
+   ================================================ */
+
+#Contactos .container {
+    margin-top: 60px;
+}
+
+.Contactos-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Contactos-row-icono {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.Contactos-row-icono img {
+    width: 45px;
+    margin-bottom: 10px;
+}
+
+/* ================================================
+   FOOTER
+   ================================================ */
+
+#mainfooter {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #ff3ea5;
+}
+
+.instagram-Boton-Seguir {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.instagram-Boton-Seguir img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* ================================================
+   RESPONSIVE
+   ================================================ */
+
+@media (max-width: 768px) {
+    #navbar ul {
+        gap: 10px;
+    }
+
+    #showcase {
+        height: 50vh;
+    }
+
+    .Acerca_de-detalles {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Contactos-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
